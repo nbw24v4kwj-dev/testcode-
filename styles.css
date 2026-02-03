@@ -331,11 +331,34 @@ nav a.active {
   gap: 16px;
 }
 
+.insight-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
 .insight-meta {
   display: flex;
   justify-content: space-between;
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.insight-list {
+  display: grid;
+  gap: 12px;
+}
+
+.insight-list strong {
+  display: block;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.insight-list span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
 }
 
 .testimonial-grid {
