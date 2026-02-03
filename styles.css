@@ -132,11 +132,12 @@ nav a.active {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
-  align-items: center;
+  align-items: stretch;
 }
 
 .hero-copy {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 18px;
 }
 
@@ -208,8 +209,10 @@ nav a.active {
 }
 
 .hero-visual {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
+  height: 100%;
 }
 
 .link-btn {
@@ -220,6 +223,7 @@ nav a.active {
 .hero-showcase {
   display: grid;
   gap: 18px;
+  flex: 1;
 }
 
 .showcase-card {
@@ -283,6 +287,7 @@ nav a.active {
   display: grid;
   gap: 14px;
   box-shadow: var(--shadow);
+  margin-top: auto;
 }
 
 .hero-panel p {
@@ -695,11 +700,10 @@ nav a.active {
 }
 
 .profile-hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
-  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .profile-hero-card {
@@ -710,6 +714,7 @@ nav a.active {
   box-shadow: var(--shadow);
   display: grid;
   gap: 20px;
+  height: 100%;
 }
 
 .profile-hero-header {
@@ -743,6 +748,8 @@ nav a.active {
   flex: 1 1 320px;
   display: grid;
   gap: 16px;
+  height: 100%;
+  grid-auto-rows: 1fr;
 }
 
 .highlight-card {
@@ -1274,6 +1281,18 @@ nav a.active {
 }
 
 @media (max-width: 900px) {
+  .hero-grid {
+    gap: 28px;
+  }
+
+  .hero-visual {
+    height: auto;
+  }
+
+  .profile-hero {
+    grid-template-columns: 1fr;
+  }
+
   .profile-grid {
     grid-template-columns: 1fr;
   }
@@ -1310,6 +1329,22 @@ nav a.active {
 @media (max-width: 600px) {
   nav {
     display: none;
+  }
+
+  .hero {
+    padding: 70px 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 7vw, 2.6rem);
+  }
+
+  .hero-visual {
+    order: 2;
+  }
+
+  .hero-copy {
+    order: 1;
   }
 
   .hero-actions {
