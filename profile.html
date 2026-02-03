@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account Center - DocCode Official Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">DocCode</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="purchase.html">Pricing</a>
+        <a href="profile.html" class="active">Account</a>
+      </nav>
+      <a class="ghost-btn" href="login.html">Log out</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container profile-hero">
+        <div class="profile-hero-card">
+          <div class="profile-hero-header">
+            <div class="avatar">AT</div>
+            <div>
+              <p class="badge">Global enterprise workspace</p>
+              <h1>Welcome, Aurora Tech Studio</h1>
+              <p class="profile-meta">Plan: Growth · Renewal: 2025-12-31 · Region: APAC · Currency: USD</p>
+            </div>
+          </div>
+          <div class="profile-hero-actions">
+            <button class="primary-btn">Renew plan</button>
+            <button class="ghost-btn">View billing</button>
+          </div>
+        </div>
+        <div class="profile-highlights">
+          <div class="highlight-card">
+            <span>Compliance status</span>
+            <strong>Verified</strong>
+            <p>PCI-ready documentation pack and audit trail enabled.</p>
+          </div>
+          <div class="highlight-card">
+            <span>Global availability</span>
+            <strong>99.98% uptime</strong>
+            <p>Multi-region delivery with localized support.</p>
+          </div>
+          <div class="highlight-card">
+            <span>Primary workspace</span>
+            <strong>Singapore</strong>
+            <p>Timezone: GMT+8 · Language: English</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <div class="profile-grid">
+          <aside class="profile-menu">
+            <button class="menu-item active" data-target="overview">Overview</button>
+            <button class="menu-item" data-target="downloads">Downloads</button>
+            <button class="menu-item" data-target="orders">Orders</button>
+            <button class="menu-item" data-target="team">Team</button>
+            <button class="menu-item" data-target="notice">Notifications</button>
+          </aside>
+          <div class="profile-content">
+            <div class="panel tab-panel active" id="overview">
+              <div class="panel-header">
+                <h3>Usage overview</h3>
+                <button class="ghost-btn">View report</button>
+              </div>
+              <div class="metrics">
+                <div>
+                  <strong>186</strong>
+                  <span>Templates downloaded</span>
+                </div>
+                <div>
+                  <strong>12</strong>
+                  <span>Active members</span>
+                </div>
+                <div>
+                  <strong>4</strong>
+                  <span>Approvals pending</span>
+                </div>
+                <div>
+                  <strong>92%</strong>
+                  <span>Execution rate</span>
+                </div>
+              </div>
+              <div class="overview-grid">
+                <div class="overview-card">
+                  <h4>Workspace profile</h4>
+                  <p>Headquarters: Singapore · Remote hubs in London and Toronto.</p>
+                  <div class="overview-tags">
+                    <span>Fintech</span>
+                    <span>Documentation</span>
+                    <span>API-first</span>
+                  </div>
+                </div>
+                <div class="overview-card">
+                  <h4>Security posture</h4>
+                  <p>SSO enforced, quarterly access reviews, and MFA coverage at 100%.</p>
+                  <button class="ghost-btn">Manage security</button>
+                </div>
+              </div>
+              <div class="progress-list">
+                <div class="progress-item">
+                  <span>Template adoption</span>
+                  <div class="progress-bar"><div class="progress" style="width: 78%"></div></div>
+                  <strong>78%</strong>
+                </div>
+                <div class="progress-item">
+                  <span>Code reuse</span>
+                  <div class="progress-bar"><div class="progress" style="width: 64%"></div></div>
+                  <strong>64%</strong>
+                </div>
+                <div class="progress-item">
+                  <span>On-time delivery</span>
+                  <div class="progress-bar"><div class="progress" style="width: 89%"></div></div>
+                  <strong>89%</strong>
+                </div>
+              </div>
+            </div>
+            <div class="panel tab-panel" id="downloads">
+              <div class="panel-header">
+                <h3>Recent downloads</h3>
+                <button class="primary-btn">Export bundle</button>
+              </div>
+              <div class="download-meta">
+                <div>
+                  <strong>Regional pack</strong>
+                  <span>Includes EU, UK, and APAC compliance annexes.</span>
+                </div>
+                <button class="ghost-btn">Manage regions</button>
+              </div>
+              <div class="download-list">
+                <div class="download-item">
+                  <div>
+                    <h4>Requirement review checklist</h4>
+                    <p>2024-11-12 · PRD template</p>
+                  </div>
+                  <button class="ghost-btn">Download again</button>
+                </div>
+                <div class="download-item">
+                  <div>
+                    <h4>Payments API spec</h4>
+                    <p>2024-11-09 · API documentation</p>
+                  </div>
+                  <button class="ghost-btn">Download again</button>
+                </div>
+                <div class="download-item">
+                  <div>
+                    <h4>QA test suite tracker</h4>
+                    <p>2024-11-02 · QA template</p>
+                  </div>
+                  <button class="ghost-btn">Download again</button>
+                </div>
+              </div>
+            </div>
+            <div class="panel tab-panel" id="orders">
+              <div class="panel-header">
+                <h3>Order history</h3>
+                <button class="ghost-btn">Export invoice</button>
+              </div>
+              <div class="order-summary">
+                <div>
+                  <strong>FY24 spend</strong>
+                  <span>$1,482</span>
+                </div>
+                <div>
+                  <strong>Payment method</strong>
+                  <span>Visa ·•• 1681</span>
+                </div>
+                <div>
+                  <strong>Billing cycle</strong>
+                  <span>Annual</span>
+                </div>
+              </div>
+              <div class="order-table">
+                <div class="order-row header">
+                  <span>Order ID</span>
+                  <span>Plan</span>
+                  <span>Amount</span>
+                  <span>Status</span>
+                  <span>Action</span>
+                </div>
+                <div class="order-row">
+                  <span>#DC2024012</span>
+                  <span>Growth</span>
+                  <span>$299</span>
+                  <span class="status success">Paid</span>
+                  <button class="ghost-btn small">Details</button>
+                </div>
+                <div class="order-row">
+                  <span>#DC2023128</span>
+                  <span>Launch</span>
+                  <span>$99</span>
+                  <span class="status">Paid</span>
+                  <button class="ghost-btn small">Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="panel tab-panel" id="team">
+              <div class="panel-header">
+                <h3>Team management</h3>
+                <button class="primary-btn">Invite members</button>
+              </div>
+              <div class="team-lead">
+                <div>
+                  <strong>Team lead</strong>
+                  <span>Leila Morgan · Product Operations</span>
+                </div>
+                <div>
+                  <strong>Active regions</strong>
+                  <span>APAC · EMEA · North America</span>
+                </div>
+              </div>
+              <div class="team-grid">
+                <div class="team-card">
+                  <h4>Remaining seats</h4>
+                  <p>3 seats</p>
+                  <button class="ghost-btn">Upgrade seats</button>
+                </div>
+                <div class="team-card">
+                  <h4>Access policy</h4>
+                  <p>Set editing and download permissions by role.</p>
+                  <button class="ghost-btn">Manage access</button>
+                </div>
+                <div class="team-card">
+                  <h4>Approval workflow</h4>
+                  <p>Configure approvals for template publishing.</p>
+                  <button class="ghost-btn">View workflow</button>
+                </div>
+              </div>
+            </div>
+            <div class="panel tab-panel" id="notice">
+              <div class="panel-header">
+                <h3>Notifications</h3>
+                <button class="ghost-btn">Mark all read</button>
+              </div>
+              <div class="notice-callout">
+                <strong>Global service update</strong>
+                <p>New data residency options are available for EU and UK teams.</p>
+              </div>
+              <div class="notice-list">
+                <div class="notice-item">
+                  <div>
+                    <h4>Template update alert</h4>
+                    <p>New compliance-ready payment templates are now available.</p>
+                  </div>
+                  <span>Today</span>
+                </div>
+                <div class="notice-item">
+                  <div>
+                    <h4>Member request</h4>
+                    <p>Jamie Chen requested access to the engineering group.</p>
+                  </div>
+                  <span>Yesterday</span>
+                </div>
+                <div class="notice-item">
+                  <div>
+                    <h4>Renewal reminder</h4>
+                    <p>Your plan renews in 45 days. Update billing to avoid service gaps.</p>
+                  </div>
+                  <span>2024-10-20</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>DocCode</h3>
+        <p>Enterprise documentation and delivery assets, ready for compliance review.</p>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <a href="#">Security settings</a>
+        <a href="#">Billing profile</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="terms.html">Terms of service</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
