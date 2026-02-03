@@ -7,7 +7,7 @@ if (billingToggle) {
     document.querySelectorAll('.price[data-price-year]').forEach((priceEl) => {
       const year = priceEl.dataset.priceYear;
       const month = priceEl.dataset.priceMonth;
-      priceEl.innerHTML = `¥${isMonthly ? month : year} <span>/ ${isMonthly ? '月' : '年'}</span>`;
+      priceEl.innerHTML = `$${isMonthly ? month : year} <span>/ ${isMonthly ? 'month' : 'year'}</span>`;
     });
   });
 }
@@ -38,3 +38,20 @@ faqItems.forEach((item) => {
     item.classList.toggle('open');
   });
 });
+
+const revealItems = document.querySelectorAll('.reveal');
+
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries, activeObserver) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        activeObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add('in-view'));
+}

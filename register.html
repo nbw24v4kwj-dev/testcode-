@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create account - DocCode</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">DocCode</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="purchase.html">Pricing</a>
+        <a href="profile.html">Account</a>
+      </nav>
+      <a class="ghost-btn" href="login.html">Log in</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="auth-page reveal">
+      <div class="container auth-layout">
+        <div class="auth-card">
+          <div class="auth-header">
+            <h1>Create your DocCode account</h1>
+            <p>Start with the plan that matches your delivery workflow.</p>
+          </div>
+          <form class="auth-form">
+            <div class="auth-grid">
+              <label>
+                First name
+                <input type="text" placeholder="Alex" required />
+              </label>
+              <label>
+                Last name
+                <input type="text" placeholder="Morgan" required />
+              </label>
+            </div>
+            <label>
+              Work email
+              <input type="email" placeholder="name@company.com" required />
+            </label>
+            <label>
+              Company
+              <input type="text" placeholder="Company name" required />
+            </label>
+            <label>
+              Create password
+              <input type="password" placeholder="Minimum 8 characters" required />
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" required />
+              I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+            </label>
+            <button class="primary-btn" type="submit">Create account</button>
+          </form>
+          <p class="auth-footer">
+            Already have an account? <a href="login.html">Log in</a>
+          </p>
+        </div>
+        <div class="auth-side">
+          <h2>Standardized onboarding</h2>
+          <p>Document everything needed for payment reviews, compliance checks, and audit trails.</p>
+          <ul class="checklist">
+            <li>Payment flow documentation templates</li>
+            <li>Risk review and escalation workflows</li>
+            <li>Billing contacts and approval matrix</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>DocCode</h3>
+        <p>Documentation and code assets for compliant delivery.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Security standards</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="#">Help center</a>
+        <a href="#">Contact sales</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
