@@ -101,12 +101,31 @@ nav a.active {
 }
 
 .hero {
-  padding: 80px 0;
+  padding: 90px 0;
 }
 
-.hero-spotlight {
+.hero-spotlight,
+.hero-premium {
   background: radial-gradient(circle at top right, rgba(61, 79, 255, 0.18), transparent 45%),
     radial-gradient(circle at top left, rgba(15, 23, 42, 0.15), transparent 40%);
+}
+
+.hero-premium {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-premium::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.6), transparent 60%);
+  pointer-events: none;
+}
+
+.hero-premium .container {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-grid {
@@ -129,6 +148,21 @@ nav a.active {
   border-radius: 999px;
   font-weight: 600;
   margin-bottom: 16px;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-badges span {
+  background: rgba(15, 23, 42, 0.08);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text);
 }
 
 .hero h1 {
@@ -161,7 +195,8 @@ nav a.active {
   font-size: 1.3rem;
 }
 
-.hero-logos {
+.hero-logos,
+.hero-trust {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -180,6 +215,40 @@ nav a.active {
 .link-btn {
   color: var(--primary);
   font-weight: 600;
+}
+
+.hero-showcase {
+  display: grid;
+  gap: 18px;
+}
+
+.showcase-card {
+  background: var(--card);
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 16px;
+}
+
+.showcase-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.showcase-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 16px;
+  color: var(--muted);
+}
+
+.showcase-metrics strong {
+  display: block;
+  color: var(--text);
+  font-size: 1.2rem;
 }
 
 .hero-card {
@@ -449,8 +518,10 @@ nav a.active {
 }
 
 .page-hero {
-  padding: 60px 0 30px;
-  background: linear-gradient(120deg, rgba(61, 79, 255, 0.1), rgba(15, 23, 42, 0.02));
+  padding: 70px 0 36px;
+  background: radial-gradient(circle at top left, rgba(61, 79, 255, 0.14), transparent 50%),
+    linear-gradient(120deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.9));
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
 }
 
 .billing-toggle {
