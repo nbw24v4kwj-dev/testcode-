@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Log in - DocCode</title>
+  <title>Reset Password - DocCode</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,7 +16,7 @@
         <a href="purchase.html">Pricing</a>
         <a href="profile.html">Account</a>
       </nav>
-      <a class="ghost-btn" href="register.html">Create account</a>
+      <a class="ghost-btn" href="login.html">Back to login</a>
     </div>
   </header>
 
@@ -25,38 +25,27 @@
       <div class="container auth-layout">
         <div class="auth-card">
           <div class="auth-header">
-            <h1>Welcome back</h1>
-            <p>Access your workspace, billing, and template downloads.</p>
+            <h1>Reset your password</h1>
+            <p>Enter your work email and we'll send a secure reset link.</p>
           </div>
           <form class="auth-form">
             <label>
               Work email
               <input type="email" placeholder="name@company.com" required />
             </label>
-            <label>
-              Password
-              <input type="password" placeholder="Enter your password" required />
-            </label>
-            <div class="auth-row">
-              <label class="checkbox">
-                <input type="checkbox" />
-                Remember me
-              </label>
-              <a href="forgot.html" class="link-btn">Forgot password?</a>
-            </div>
-            <button class="primary-btn" type="submit">Log in</button>
+            <button class="primary-btn" type="submit">Send reset link</button>
           </form>
           <p class="auth-footer">
-            New to DocCode? <a href="register.html">Create an account</a>
+            Need help? <a href="mailto:support@doccode.io">Contact support</a>
           </p>
         </div>
         <div class="auth-side">
-          <h2>Trusted by delivery teams</h2>
-          <p>Standardized documentation, secure access, and auditable workflows for payment reviews.</p>
+          <h2>Security-first recovery</h2>
+          <p>We use verified email workflows and audit logs to protect account access.</p>
           <ul class="checklist">
-            <li>SSO-ready access control</li>
-            <li>Audit-ready change logs</li>
-            <li>Secure billing management</li>
+            <li>Time-limited reset tokens</li>
+            <li>Multi-factor ready access</li>
+            <li>Support escalation available</li>
           </ul>
         </div>
       </div>
@@ -67,17 +56,17 @@
     <div class="container footer-grid">
       <div>
         <h3>DocCode</h3>
-        <p>Compliance-friendly documentation workflows.</p>
+        <p>Secure documentation workflows for modern teams.</p>
       </div>
       <div>
-        <h4>Security</h4>
+        <h4>Legal</h4>
         <a href="privacy.html">Privacy policy</a>
         <a href="terms.html">Terms of service</a>
       </div>
       <div>
         <h4>Support</h4>
         <a href="#">Help center</a>
-        <a href="#">Contact support</a>
+        <a href="mailto:support@doccode.io">support@doccode.io</a>
       </div>
     </div>
   </footer>
