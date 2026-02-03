@@ -39,6 +39,31 @@ faqItems.forEach((item) => {
   });
 });
 
+const legalTabs = document.querySelectorAll('.legal-tabs');
+
+legalTabs.forEach((tabs) => {
+  const buttons = tabs.querySelectorAll('.legal-tab');
+  const panels = tabs.parentElement.querySelectorAll('.legal-panel');
+  const defaultTab = tabs.dataset.default || (buttons[0] && buttons[0].dataset.legal);
+
+  const activateTab = (name) => {
+    buttons.forEach((button) => {
+      button.classList.toggle('active', button.dataset.legal === name);
+    });
+    panels.forEach((panel) => {
+      panel.classList.toggle('active', panel.dataset.legalPanel === name);
+    });
+  };
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => activateTab(button.dataset.legal));
+  });
+
+  if (defaultTab) {
+    activateTab(defaultTab);
+  }
+});
+
 const revealItems = document.querySelectorAll('.reveal');
 
 if ('IntersectionObserver' in window) {
