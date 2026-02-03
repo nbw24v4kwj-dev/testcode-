@@ -35,15 +35,18 @@
       <div class="container">
         <div class="profile-grid">
           <aside class="profile-menu">
-            <button class="menu-item active">账户概览</button>
-            <button class="menu-item">模板下载</button>
-            <button class="menu-item">订单记录</button>
-            <button class="menu-item">团队成员</button>
-            <button class="menu-item">通知中心</button>
+            <button class="menu-item active" data-target="overview">账户概览</button>
+            <button class="menu-item" data-target="downloads">模板下载</button>
+            <button class="menu-item" data-target="orders">订单记录</button>
+            <button class="menu-item" data-target="team">团队成员</button>
+            <button class="menu-item" data-target="notice">通知中心</button>
           </aside>
           <div class="profile-content">
-            <div class="panel">
-              <h3>使用概览</h3>
+            <div class="panel tab-panel active" id="overview">
+              <div class="panel-header">
+                <h3>使用概览</h3>
+                <button class="ghost-btn">查看报表</button>
+              </div>
               <div class="metrics">
                 <div>
                   <strong>186</strong>
@@ -57,10 +60,34 @@
                   <strong>4</strong>
                   <span>待处理审批</span>
                 </div>
+                <div>
+                  <strong>92%</strong>
+                  <span>团队执行率</span>
+                </div>
+              </div>
+              <div class="progress-list">
+                <div class="progress-item">
+                  <span>模板使用率</span>
+                  <div class="progress-bar"><div class="progress" style="width: 78%"></div></div>
+                  <strong>78%</strong>
+                </div>
+                <div class="progress-item">
+                  <span>代码片段复用</span>
+                  <div class="progress-bar"><div class="progress" style="width: 64%"></div></div>
+                  <strong>64%</strong>
+                </div>
+                <div class="progress-item">
+                  <span>交付准时率</span>
+                  <div class="progress-bar"><div class="progress" style="width: 89%"></div></div>
+                  <strong>89%</strong>
+                </div>
               </div>
             </div>
-            <div class="panel">
-              <h3>最近下载</h3>
+            <div class="panel tab-panel" id="downloads">
+              <div class="panel-header">
+                <h3>最近下载</h3>
+                <button class="primary-btn">批量导出</button>
+              </div>
               <div class="download-list">
                 <div class="download-item">
                   <div>
@@ -85,18 +112,84 @@
                 </div>
               </div>
             </div>
-            <div class="panel">
-              <h3>团队管理</h3>
+            <div class="panel tab-panel" id="orders">
+              <div class="panel-header">
+                <h3>订单记录</h3>
+                <button class="ghost-btn">导出发票</button>
+              </div>
+              <div class="order-table">
+                <div class="order-row header">
+                  <span>订单号</span>
+                  <span>套餐</span>
+                  <span>金额</span>
+                  <span>状态</span>
+                  <span>操作</span>
+                </div>
+                <div class="order-row">
+                  <span>#DC2024012</span>
+                  <span>增长版</span>
+                  <span>¥299</span>
+                  <span class="status success">已完成</span>
+                  <button class="ghost-btn small">查看详情</button>
+                </div>
+                <div class="order-row">
+                  <span>#DC2023128</span>
+                  <span>启航版</span>
+                  <span>¥99</span>
+                  <span class="status">已完成</span>
+                  <button class="ghost-btn small">查看详情</button>
+                </div>
+              </div>
+            </div>
+            <div class="panel tab-panel" id="team">
+              <div class="panel-header">
+                <h3>团队管理</h3>
+                <button class="primary-btn">邀请成员</button>
+              </div>
               <div class="team-grid">
                 <div class="team-card">
                   <h4>剩余席位</h4>
                   <p>3 个</p>
-                  <button class="primary-btn">邀请成员</button>
+                  <button class="ghost-btn">升级席位</button>
                 </div>
                 <div class="team-card">
                   <h4>权限方案</h4>
                   <p>可设置编辑与下载权限</p>
                   <button class="ghost-btn">设置权限</button>
+                </div>
+                <div class="team-card">
+                  <h4>协作规范</h4>
+                  <p>分组管理与模板审批流配置</p>
+                  <button class="ghost-btn">查看设置</button>
+                </div>
+              </div>
+            </div>
+            <div class="panel tab-panel" id="notice">
+              <div class="panel-header">
+                <h3>通知中心</h3>
+                <button class="ghost-btn">全部已读</button>
+              </div>
+              <div class="notice-list">
+                <div class="notice-item">
+                  <div>
+                    <h4>模板库更新提醒</h4>
+                    <p>新增「支付合规」模板包，立即查看。</p>
+                  </div>
+                  <span>今天</span>
+                </div>
+                <div class="notice-item">
+                  <div>
+                    <h4>成员加入申请</h4>
+                    <p>王梓申请加入研发组，待审批。</p>
+                  </div>
+                  <span>昨天</span>
+                </div>
+                <div class="notice-item">
+                  <div>
+                    <h4>套餐到期提醒</h4>
+                    <p>距离到期还有 45 天，请及时续费。</p>
+                  </div>
+                  <span>2024-10-20</span>
                 </div>
               </div>
             </div>
@@ -124,5 +217,6 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
